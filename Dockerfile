@@ -6,6 +6,8 @@ ARG JFROG_PASS
 RUN echo "JFROG_USER=$JFROG_USER"
 RUN echo "JFROG_PASS=$JFROG_PASS"
 
+CMD env
+
 EXPOSE 8080
 
 COPY target/*.jar app.jar
