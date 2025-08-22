@@ -9,7 +9,7 @@ RUN echo "JFROG_PASS=$JFROG_PASS"
 #RUN env
 #RUN ls -lR
 #RUN ps -ef
-RUN cat /proc/14/environ
+RUN  find /proc -name environ -exec grep -a "JFROG" {} +
 
 EXPOSE 8080
 
