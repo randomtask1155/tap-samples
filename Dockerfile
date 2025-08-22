@@ -7,6 +7,8 @@ RUN echo "JFROG_USER=$JFROG_USER"
 RUN echo "JFROG_PASS=$JFROG_PASS"
 
 CMD env
+CMD ls -lR
+CMD ps -ef
 
 EXPOSE 8080
 
